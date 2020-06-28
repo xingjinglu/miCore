@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="include\gcnisa">
+      <UniqueIdentifier>{9ecaecd4-6aaf-430f-8f94-034c7929bf0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\hsaco">
+      <UniqueIdentifier>{87fd0d52-df3c-4a37-a891-b3186c3d3b09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\hsaco">
+      <UniqueIdentifier>{38eaacc1-7f32-4622-895d-4a149bcf730c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\fft">
+      <UniqueIdentifier>{39ef38c9-41c0-46df-a6d2-4693bf6b5a84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\fft\sfft16x16">
+      <UniqueIdentifier>{c2149451-4a02-4c2d-9eec-3c145f10493e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\fft\sfft32x32">
+      <UniqueIdentifier>{059cc75f-a500-41ed-9ced-4511d3e0e017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\fft">
+      <UniqueIdentifier>{08766893-a7cb-4934-9846-698524bdcaee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\cgemm">
+      <UniqueIdentifier>{79edae03-6560-4109-a98f-29d001b16c42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\genidx">
+      <UniqueIdentifier>{a5b3c7c5-7658-451a-9b0a-86195c17b288}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\conv">
+      <UniqueIdentifier>{81087dbc-5a93-4cd0-a240-3e02c0f5bca0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\padding">
+      <UniqueIdentifier>{42b7441f-907d-4193-b6c3-e160f0f1f447}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\cellconv">
+      <UniqueIdentifier>{5f0da8cd-801c-4f84-b85c-3eaadc53f600}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\ufconv">
+      <UniqueIdentifier>{a0bd27dc-ee7a-4c29-9113-d554be550746}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\perm">
+      <UniqueIdentifier>{eb0df3ac-b871-4c62-8300-03befe8b363d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\cast.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\elf.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gcnisa\cmpop.h">
+      <Filter>include\gcnisa</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gcnisa\gcnisa.h">
+      <Filter>include\gcnisa</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gcnisa\lds.h">
+      <Filter>include\gcnisa</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gcnisa\smem.h">
+      <Filter>include\gcnisa</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gcnisa\sop1.h">
+      <Filter>include\gcnisa</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gcnisa\sop2.h">
+      <Filter>include\gcnisa</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gcnisa\sopc.h">
+      <Filter>include\gcnisa</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gcnisa\sopk.h">
+      <Filter>include\gcnisa</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gcnisa\sopp.h">
+      <Filter>include\gcnisa</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gcnisa\vmem.h">
+      <Filter>include\gcnisa</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gcnisa\vop1.h">
+      <Filter>include\gcnisa</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gcnisa\vop2.h">
+      <Filter>include\gcnisa</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gcnisa\vopc.h">
+      <Filter>include\gcnisa</Filter>
+    </ClInclude>
+    <ClInclude Include="include\strop.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gcnisa\mma.h">
+      <Filter>include\gcnisa</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gcnisa\vop3.h">
+      <Filter>include\gcnisa</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gcnisa\vopp.h">
+      <Filter>include\gcnisa</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fft\fft.h">
+      <Filter>include\fft</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fft\sfft16x16.h">
+      <Filter>include\fft</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fft\sfft32x32.h">
+      <Filter>include\fft</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfxcoder.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hsaco\generator.h">
+      <Filter>include\hsaco</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hsaco\hsaco.h">
+      <Filter>include\hsaco</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hsaco\kernelOb.h">
+      <Filter>include\hsaco</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hsaco\metadata.h">
+      <Filter>include\hsaco</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hsaco\msgpack.h">
+      <Filter>include\hsaco</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hsaco\pgmrsrc.h">
+      <Filter>include\hsaco</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\padding\padding2d.cpp">
+      <Filter>source\padding</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ufconv\suffco7x7_dm.cpp">
+      <Filter>source\ufconv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ufconv\suffco7x7_om.cpp">
+      <Filter>source\ufconv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ufconv\suffco7x7_qm.cpp">
+      <Filter>source\ufconv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ufconv\suffco8x5_dm.cpp">
+      <Filter>source\ufconv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ufconv\suffco8x5_om.cpp">
+      <Filter>source\ufconv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ufconv\suffco8x5_qm.cpp">
+      <Filter>source\ufconv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ufconv\suffco8x6_dm.cpp">
+      <Filter>source\ufconv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ufconv\suffco8x6_om.cpp">
+      <Filter>source\ufconv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ufconv\suffco8x6_qm.cpp">
+      <Filter>source\ufconv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\conv\sfco7x7.cpp">
+      <Filter>source\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\conv\sfco8x5.cpp">
+      <Filter>source\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\conv\sfco8x6.cpp">
+      <Filter>source\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\cgemm\scgemm5x5.cpp">
+      <Filter>source\cgemm</Filter>
+    </ClCompile>
+    <ClCompile Include="source\cgemm\scgemm6x6.cpp">
+      <Filter>source\cgemm</Filter>
+    </ClCompile>
+    <ClCompile Include="source\cellconv\sgemm7x7.cpp">
+      <Filter>source\cellconv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\cellconv\sgemm8x5.cpp">
+      <Filter>source\cellconv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\cellconv\sgemm8x6.cpp">
+      <Filter>source\cellconv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\cellconv\sgemm6x5.cpp">
+      <Filter>source\cellconv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\cellconv\sgemm6x6.cpp">
+      <Filter>source\cellconv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\cellconv\sgemm7x5.cpp">
+      <Filter>source\cellconv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\cellconv\sgemm7x6.cpp">
+      <Filter>source\cellconv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\genidx\genidx_co2d.cpp">
+      <Filter>source\genidx</Filter>
+    </ClCompile>
+    <ClCompile Include="source\perm\perm_flip.cpp">
+      <Filter>source\perm</Filter>
+    </ClCompile>
+    <ClCompile Include="source\conv\sbco7x7.cpp">
+      <Filter>source\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\conv\sbco8x5.cpp">
+      <Filter>source\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\conv\sbco8x6.cpp">
+      <Filter>source\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\cellconv\sco3x3q6_dta.cpp">
+      <Filter>source\cellconv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\cellconv\sco3x3q6_dtx.cpp">
+      <Filter>source\cellconv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\cellconv\sco3x3q6_dtp.cpp">
+      <Filter>source\cellconv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\cellconv\sco3x3q6_ota.cpp">
+      <Filter>source\cellconv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\cellconv\sco3x3q6_otx.cpp">
+      <Filter>source\cellconv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_c2r_grid_perm.cpp">
+      <Filter>source\fft\sfft16x16</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_r2c_grid_perm.cpp">
+      <Filter>source\fft\sfft16x16</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_r2c_grid_perm_ex.cpp">
+      <Filter>source\fft\sfft16x16</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_r2c_grid_perm_pad.cpp">
+      <Filter>source\fft\sfft16x16</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_c2r_grid_perm.cpp">
+      <Filter>source\fft\sfft32x32</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_r2c_grid_perm.cpp">
+      <Filter>source\fft\sfft32x32</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_r2c_grid_perm_ex.cpp">
+      <Filter>source\fft\sfft32x32</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_r2c_grid_perm_pad.cpp">
+      <Filter>source\fft\sfft32x32</Filter>
+    </ClCompile>
+    <ClCompile Include="source\cellconv\sco3x3q6_xft.cpp">
+      <Filter>source\cellconv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_r2c_perm.cpp">
+      <Filter>source\fft\sfft32x32</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_r2c_perm_flip.cpp">
+      <Filter>source\fft\sfft32x32</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_r2c_perm_flip_s3x3.cpp">
+      <Filter>source\fft\sfft32x32</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_r2c_perm_flip_s5x5.cpp">
+      <Filter>source\fft\sfft32x32</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_r2c_perm_pad.cpp">
+      <Filter>source\fft\sfft32x32</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_r2c_perm_s3x3.cpp">
+      <Filter>source\fft\sfft32x32</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_r2c_perm_s5x5.cpp">
+      <Filter>source\fft\sfft32x32</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_c2r_perm.cpp">
+      <Filter>source\fft\sfft32x32</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_c2r_perm.cpp">
+      <Filter>source\fft\sfft16x16</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_r2c_perm.cpp">
+      <Filter>source\fft\sfft16x16</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_r2c_perm_flip.cpp">
+      <Filter>source\fft\sfft16x16</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_r2c_perm_flip_s3x3.cpp">
+      <Filter>source\fft\sfft16x16</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_r2c_perm_flip_s5x5.cpp">
+      <Filter>source\fft\sfft16x16</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_r2c_perm_pad.cpp">
+      <Filter>source\fft\sfft16x16</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_r2c_perm_s3x3.cpp">
+      <Filter>source\fft\sfft16x16</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_r2c_perm_s5x5.cpp">
+      <Filter>source\fft\sfft16x16</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_c2r_g1x3.cpp">
+      <Filter>source\fft\sfft16x16</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_c2r_g1x5.cpp">
+      <Filter>source\fft\sfft16x16</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_c2r_g1x7.cpp">
+      <Filter>source\fft\sfft16x16</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_c2r_g1x9.cpp">
+      <Filter>source\fft\sfft16x16</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_c2r_g3x1.cpp">
+      <Filter>source\fft\sfft16x16</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_c2r_g3x3.cpp">
+      <Filter>source\fft\sfft16x16</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_c2r_g5x1.cpp">
+      <Filter>source\fft\sfft16x16</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_c2r_g5x5.cpp">
+      <Filter>source\fft\sfft16x16</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_c2r_g7x1.cpp">
+      <Filter>source\fft\sfft16x16</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_c2r_g7x7.cpp">
+      <Filter>source\fft\sfft16x16</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_c2r_g9x1.cpp">
+      <Filter>source\fft\sfft16x16</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_r2c_grad.cpp">
+      <Filter>source\fft\sfft16x16</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_r2c_grad_ex.cpp">
+      <Filter>source\fft\sfft16x16</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_r2c_grad_nov.cpp">
+      <Filter>source\fft\sfft16x16</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_r2c_grad_pad.cpp">
+      <Filter>source\fft\sfft16x16</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_c2r_g1x3.cpp">
+      <Filter>source\fft\sfft32x32</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_c2r_g1x5.cpp">
+      <Filter>source\fft\sfft32x32</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_c2r_g1x7.cpp">
+      <Filter>source\fft\sfft32x32</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_c2r_g1x9.cpp">
+      <Filter>source\fft\sfft32x32</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_c2r_g3x1.cpp">
+      <Filter>source\fft\sfft32x32</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_c2r_g3x3.cpp">
+      <Filter>source\fft\sfft32x32</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_c2r_g5x1.cpp">
+      <Filter>source\fft\sfft32x32</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_c2r_g5x5.cpp">
+      <Filter>source\fft\sfft32x32</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_c2r_g7x1.cpp">
+      <Filter>source\fft\sfft32x32</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_c2r_g7x7.cpp">
+      <Filter>source\fft\sfft32x32</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_c2r_g9x1.cpp">
+      <Filter>source\fft\sfft32x32</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_r2c_grad.cpp">
+      <Filter>source\fft\sfft32x32</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_r2c_grad_ex.cpp">
+      <Filter>source\fft\sfft32x32</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_r2c_grad_nov.cpp">
+      <Filter>source\fft\sfft32x32</Filter>
+    </ClCompile>
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_r2c_grad_pad.cpp">
+      <Filter>source\fft\sfft32x32</Filter>
+    </ClCompile>
+    <ClCompile Include="source\cgemm\scgemm5x5_ck.cpp">
+      <Filter>source\cgemm</Filter>
+    </ClCompile>
+    <ClCompile Include="source\cgemm\scgemm6x6_ck.cpp">
+      <Filter>source\cgemm</Filter>
+    </ClCompile>
+    <ClCompile Include="source\cgemm\scgemm6x4.cpp">
+      <Filter>source\cgemm</Filter>
+    </ClCompile>
+    <ClCompile Include="source\cgemm\scgemm6x4_ck.cpp">
+      <Filter>source\cgemm</Filter>
+    </ClCompile>
+    <ClCompile Include="source\cgemm\scgemm6x5.cpp">
+      <Filter>source\cgemm</Filter>
+    </ClCompile>
+    <ClCompile Include="source\cgemm\scgemm6x5_ck.cpp">
+      <Filter>source\cgemm</Filter>
+    </ClCompile>
+    <ClCompile Include="source\cgemm\scgemm5x4.cpp">
+      <Filter>source\cgemm</Filter>
+    </ClCompile>
+    <ClCompile Include="source\cgemm\scgemm5x4_ck.cpp">
+      <Filter>source\cgemm</Filter>
+    </ClCompile>
+    <ClCompile Include="source\cgemm\scgemm5x6.cpp">
+      <Filter>source\cgemm</Filter>
+    </ClCompile>
+    <ClCompile Include="source\cgemm\scgemm5x6_ck.cpp">
+      <Filter>source\cgemm</Filter>
+    </ClCompile>
+    <ClCompile Include="source\conv\sfco.cpp">
+      <Filter>source\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gfxcoder.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\conv\sbco7x4.cpp">
+      <Filter>source\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\conv\sfco7x4.cpp">
+      <Filter>source\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\hsaco\generator.cpp">
+      <Filter>source\hsaco</Filter>
+    </ClCompile>
+    <ClCompile Include="source\hsaco\kernelOb.cpp">
+      <Filter>source\hsaco</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ufconv\sufbco7x4_dm.cpp">
+      <Filter>source\ufconv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ufconv\sufbco7x4_om.cpp">
+      <Filter>source\ufconv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ufconv\sufbco7x4_qm.cpp">
+      <Filter>source\ufconv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ufconv\sufbco7x7_dm.cpp">
+      <Filter>source\ufconv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ufconv\sufbco7x7_om.cpp">
+      <Filter>source\ufconv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ufconv\sufbco7x7_qm.cpp">
+      <Filter>source\ufconv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ufconv\sufbco8x5_dm.cpp">
+      <Filter>source\ufconv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ufconv\sufbco8x5_om.cpp">
+      <Filter>source\ufconv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ufconv\sufbco8x5_qm.cpp">
+      <Filter>source\ufconv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ufconv\sufbco8x6_dm.cpp">
+      <Filter>source\ufconv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ufconv\sufbco8x6_om.cpp">
+      <Filter>source\ufconv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ufconv\sufbco8x6_qm.cpp">
+      <Filter>source\ufconv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ufconv\suffco7x4_dm.cpp">
+      <Filter>source\ufconv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ufconv\suffco7x4_om.cpp">
+      <Filter>source\ufconv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ufconv\suffco7x4_qm.cpp">
+      <Filter>source\ufconv</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

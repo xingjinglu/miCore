@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CD68240C-9BED-464D-A869-5BB68CA0502A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>vgemm</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <ProjectName>micoreBingen</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PlatformToolset>v120</PlatformToolset>
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>C:\Program Files %28x86%29\AMD APP SDK\3.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\AMD APP SDK\3.0\lib\x86_64;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>C:\Program Files %28x86%29\AMD APP SDK\3.0\bin\x86_64;$(ExecutablePath)</ExecutablePath>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions>_WIN64;NDEBUG;</PreprocessorDefinitions>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <OmitFramePointers>true</OmitFramePointers>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\cast.h" />
+    <ClInclude Include="include\elf.h" />
+    <ClInclude Include="include\fft\fft.h" />
+    <ClInclude Include="include\fft\sfft16x16.h" />
+    <ClInclude Include="include\fft\sfft32x32.h" />
+    <ClInclude Include="include\gcnisa\cmpop.h" />
+    <ClInclude Include="include\gcnisa\gcnisa.h" />
+    <ClInclude Include="include\gcnisa\lds.h" />
+    <ClInclude Include="include\gcnisa\mma.h" />
+    <ClInclude Include="include\gcnisa\smem.h" />
+    <ClInclude Include="include\gcnisa\sop1.h" />
+    <ClInclude Include="include\gcnisa\sop2.h" />
+    <ClInclude Include="include\gcnisa\sopc.h" />
+    <ClInclude Include="include\gcnisa\sopk.h" />
+    <ClInclude Include="include\gcnisa\sopp.h" />
+    <ClInclude Include="include\gcnisa\vmem.h" />
+    <ClInclude Include="include\gcnisa\vop1.h" />
+    <ClInclude Include="include\gcnisa\vop2.h" />
+    <ClInclude Include="include\gcnisa\vop3.h" />
+    <ClInclude Include="include\gcnisa\vopp.h" />
+    <ClInclude Include="include\gcnisa\vopc.h" />
+    <ClInclude Include="include\hsaco\generator.h" />
+    <ClInclude Include="include\hsaco\hsaco.h" />
+    <ClInclude Include="include\hsaco\kernelOb.h" />
+    <ClInclude Include="include\hsaco\metadata.h" />
+    <ClInclude Include="include\hsaco\msgpack.h" />
+    <ClInclude Include="include\hsaco\pgmrsrc.h" />
+    <ClInclude Include="include\strop.h" />
+    <ClInclude Include="include\gfxcoder.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="source\cellconv\sco3x3q6_dta.cpp" />
+    <ClCompile Include="source\cellconv\sco3x3q6_dtx.cpp" />
+    <ClCompile Include="source\cellconv\sco3x3q6_dtp.cpp" />
+    <ClCompile Include="source\cellconv\sco3x3q6_ota.cpp" />
+    <ClCompile Include="source\cellconv\sco3x3q6_otx.cpp" />
+    <ClCompile Include="source\cellconv\sco3x3q6_xft.cpp" />
+    <ClCompile Include="source\cellconv\sgemm6x5.cpp" />
+    <ClCompile Include="source\cellconv\sgemm6x6.cpp" />
+    <ClCompile Include="source\cellconv\sgemm7x5.cpp" />
+    <ClCompile Include="source\cellconv\sgemm7x6.cpp" />
+    <ClCompile Include="source\cellconv\sgemm7x7.cpp" />
+    <ClCompile Include="source\cellconv\sgemm8x5.cpp" />
+    <ClCompile Include="source\cellconv\sgemm8x6.cpp" />
+    <ClCompile Include="source\cgemm\scgemm5x4.cpp" />
+    <ClCompile Include="source\cgemm\scgemm5x4_ck.cpp" />
+    <ClCompile Include="source\cgemm\scgemm5x5.cpp" />
+    <ClCompile Include="source\cgemm\scgemm5x5_ck.cpp" />
+    <ClCompile Include="source\cgemm\scgemm5x6.cpp" />
+    <ClCompile Include="source\cgemm\scgemm5x6_ck.cpp" />
+    <ClCompile Include="source\cgemm\scgemm6x4.cpp" />
+    <ClCompile Include="source\cgemm\scgemm6x4_ck.cpp" />
+    <ClCompile Include="source\cgemm\scgemm6x5.cpp" />
+    <ClCompile Include="source\cgemm\scgemm6x5_ck.cpp" />
+    <ClCompile Include="source\cgemm\scgemm6x6.cpp" />
+    <ClCompile Include="source\cgemm\scgemm6x6_ck.cpp" />
+    <ClCompile Include="source\conv\sbco7x4.cpp" />
+    <ClCompile Include="source\conv\sbco7x7.cpp" />
+    <ClCompile Include="source\conv\sbco8x5.cpp" />
+    <ClCompile Include="source\conv\sbco8x6.cpp" />
+    <ClCompile Include="source\conv\sfco.cpp" />
+    <ClCompile Include="source\conv\sfco7x4.cpp" />
+    <ClCompile Include="source\conv\sfco7x7.cpp" />
+    <ClCompile Include="source\conv\sfco8x5.cpp" />
+    <ClCompile Include="source\conv\sfco8x6.cpp" />
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_c2r_g1x3.cpp" />
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_c2r_g1x5.cpp" />
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_c2r_g1x7.cpp" />
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_c2r_g1x9.cpp" />
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_c2r_g3x1.cpp" />
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_c2r_g3x3.cpp" />
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_c2r_g5x1.cpp" />
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_c2r_g5x5.cpp" />
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_c2r_g7x1.cpp" />
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_c2r_g7x7.cpp" />
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_c2r_g9x1.cpp" />
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_c2r_perm.cpp" />
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_c2r_grid_perm.cpp" />
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_r2c_grad.cpp" />
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_r2c_grad_ex.cpp" />
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_r2c_grad_nov.cpp" />
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_r2c_grad_pad.cpp" />
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_r2c_perm.cpp" />
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_r2c_perm_flip.cpp" />
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_r2c_perm_flip_s3x3.cpp" />
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_r2c_perm_flip_s5x5.cpp" />
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_r2c_perm_pad.cpp" />
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_r2c_perm_s3x3.cpp" />
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_r2c_perm_s5x5.cpp" />
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_r2c_grid_perm.cpp" />
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_r2c_grid_perm_ex.cpp" />
+    <ClCompile Include="source\fft\sfft16x16\sfft16x16_r2c_grid_perm_pad.cpp" />
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_c2r_g1x3.cpp" />
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_c2r_g1x5.cpp" />
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_c2r_g1x7.cpp" />
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_c2r_g1x9.cpp" />
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_c2r_g3x1.cpp" />
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_c2r_g3x3.cpp" />
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_c2r_g5x1.cpp" />
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_c2r_g5x5.cpp" />
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_c2r_g7x1.cpp" />
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_c2r_g7x7.cpp" />
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_c2r_g9x1.cpp" />
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_c2r_perm.cpp" />
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_c2r_grid_perm.cpp" />
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_r2c_grad.cpp" />
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_r2c_grad_ex.cpp" />
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_r2c_grad_nov.cpp" />
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_r2c_grad_pad.cpp" />
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_r2c_perm.cpp" />
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_r2c_perm_s3x3.cpp" />
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_r2c_perm_s5x5.cpp" />
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_r2c_perm_flip.cpp" />
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_r2c_perm_flip_s3x3.cpp" />
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_r2c_perm_flip_s5x5.cpp" />
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_r2c_perm_pad.cpp" />
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_r2c_grid_perm.cpp" />
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_r2c_grid_perm_ex.cpp" />
+    <ClCompile Include="source\fft\sfft32x32\sfft32x32_r2c_grid_perm_pad.cpp" />
+    <ClCompile Include="source\genidx\genidx_co2d.cpp" />
+    <ClCompile Include="source\hsaco\generator.cpp" />
+    <ClCompile Include="source\hsaco\kernelOb.cpp" />
+    <ClCompile Include="source\padding\padding2d.cpp" />
+    <ClCompile Include="source\perm\perm_flip.cpp" />
+    <ClCompile Include="source\ufconv\sufbco7x4_dm.cpp" />
+    <ClCompile Include="source\ufconv\sufbco7x4_om.cpp" />
+    <ClCompile Include="source\ufconv\sufbco7x4_qm.cpp" />
+    <ClCompile Include="source\ufconv\sufbco7x7_dm.cpp" />
+    <ClCompile Include="source\ufconv\sufbco7x7_om.cpp" />
+    <ClCompile Include="source\ufconv\sufbco7x7_qm.cpp" />
+    <ClCompile Include="source\ufconv\sufbco8x5_dm.cpp" />
+    <ClCompile Include="source\ufconv\sufbco8x5_om.cpp" />
+    <ClCompile Include="source\ufconv\sufbco8x5_qm.cpp" />
+    <ClCompile Include="source\ufconv\sufbco8x6_dm.cpp" />
+    <ClCompile Include="source\ufconv\sufbco8x6_om.cpp" />
+    <ClCompile Include="source\ufconv\sufbco8x6_qm.cpp" />
+    <ClCompile Include="source\ufconv\suffco7x4_dm.cpp" />
+    <ClCompile Include="source\ufconv\suffco7x4_om.cpp" />
+    <ClCompile Include="source\ufconv\suffco7x4_qm.cpp" />
+    <ClCompile Include="source\ufconv\suffco7x7_dm.cpp" />
+    <ClCompile Include="source\ufconv\suffco7x7_om.cpp" />
+    <ClCompile Include="source\ufconv\suffco7x7_qm.cpp" />
+    <ClCompile Include="source\ufconv\suffco8x5_dm.cpp" />
+    <ClCompile Include="source\ufconv\suffco8x5_om.cpp" />
+    <ClCompile Include="source\ufconv\suffco8x5_qm.cpp" />
+    <ClCompile Include="source\ufconv\suffco8x6_dm.cpp" />
+    <ClCompile Include="source\ufconv\suffco8x6_om.cpp" />
+    <ClCompile Include="source\ufconv\suffco8x6_qm.cpp" />
+    <ClCompile Include="source\gfxcoder.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
